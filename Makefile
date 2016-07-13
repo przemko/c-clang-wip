@@ -1,6 +1,6 @@
 CC=clang
 CFLAGS=-Wall --pedantic -std=c11
-LDFLAGS=
+LDFLAGS=-lm
 
 PROGS=doublemacheps euklides floatmacheps hanoi hetmany \
 pierwsza plecak rozeuklides sito skoczek scalsort wstawsort \
