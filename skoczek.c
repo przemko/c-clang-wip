@@ -3,7 +3,7 @@
 // Program znajduje rozwiązanie problemu skoczka szachowego
 // (jeśli ono istnieje). Dla danego rozmiaru planszy
 // rozwiązaniem jest droga ruchami skoczka szachowego przez
-// wszystkie pola planszy, przy czym każde pole planszy jest//
+// wszystkie pola planszy, przy czym każde pole planszy jest
 // odwiedzane dokładnie raz.
 
 #include <stdio.h>
@@ -39,7 +39,8 @@ int main(void)
   int n;
   for(;;)
   {
-    printf("Rozmiar planszy nie większy niż %d (zero aby zakończyć): ", max_rozmiar);
+    printf("Rozmiar nie większy niż %d (zero aby zakończyć): ",
+           max_rozmiar);
     scanf("%d", &n);
     if(n == 0)
       break;
@@ -50,7 +51,8 @@ int main(void)
     }
     if(n > max_rozmiar)
     {
-      printf("Za duży rozmiar planszy (przekracza %d).\n", max_rozmiar);
+      printf("Za duży rozmiar planszy (przekracza %d).\n",
+             max_rozmiar);
       continue;
     }
     int plansza[n][n];

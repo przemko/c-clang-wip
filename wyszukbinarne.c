@@ -1,6 +1,6 @@
 // wyszukbinarne.c
 //
-// Wyszukiwanie binarne zadanej wartości w tablicy uporządkowanej.
+// Wyszukiwanie zadanej wartości w tablicy uporządkowanej.
 
 #include <stdio.h>
 #include <stdbool.h>

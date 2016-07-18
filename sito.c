@@ -1,7 +1,8 @@
 // sito.c
 //
-// Program zlicza liczby pierwsze z przedziału [0 .. n]. Do szybkiego
-// wyznaczania liczb pierwszych wykorzystano sito Eratostenesa.
+// Program zlicza liczby pierwsze z przedziału [0 .. n]. Do
+// szybkiego wyznaczania liczb pierwszych wykorzystano sito
+// Eratostenesa.
 
 #include <stdio.h>
 #include <math.h>
@@ -38,6 +39,7 @@ int main(void)
     if(sito[liczba])
       licznik++;
 
-  printf("Znaleziono %d liczb pierwszych w [0 .. %u].\n", licznik, n);
+  printf("Znaleziono %d liczb pierwszych w [0 .. %u].\n",
+         licznik, n);
   return 0;
 }

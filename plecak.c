@@ -7,7 +7,8 @@
 static const int max_n = 100;
 static const int max_pojemność = 1000000;
 
-int plecak(int n, int rozmiar[n], int wartość[n], int pojemność)
+int plecak(int n, int rozmiar[n], int wartość[n],
+           int pojemność)
 {
   int max_wartość[pojemność];
   max_wartość[0] = 0;

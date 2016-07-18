@@ -24,7 +24,8 @@ int main(void)
   if(i > limit)
     printf("%u jest liczbą pierwszą.\n", n);
   else
-    printf("%u nie jest liczbą pierwszą (np. %u|%u).\n", n, i, n);
+    printf("%u nie jest liczbą pierwszą (np. %u|%u).\n",
+           n, i, n);
   return 0;
 }
 

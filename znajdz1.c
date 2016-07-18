@@ -1,7 +1,7 @@
 // znajdz1.c
 //
-// Wyznaczanie najmniejszej liczby naturalnej, która nie występuje
-// w danej tablicy.
+// Wyznaczanie najmniejszej liczby naturalnej, która nie 
+// występuje w danej tablicy.
 
 #include <stdio.h>
 #include <stdbool.h>

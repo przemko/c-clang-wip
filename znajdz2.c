@@ -1,15 +1,15 @@
 // znajdz2.c
 //
-// Wyznaczanie najmniejszej liczby naturalnej, która nie występuje
-// w danej tablicy (zastosowano połowienie).
+// Wyznaczanie najmniejszej liczby naturalnej, która nie 
+// występuje w danej tablicy (zastosowano połowienie).
 
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
 
-int podziel(int dl, unsigned int tab[dl], int początek, int koniec, 
-            unsigned int próg)
+int podziel(int dl, unsigned int tab[dl], int początek, 
+            int koniec, unsigned int próg)
 {
   int i = początek;
   int j = koniec;

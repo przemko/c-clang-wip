@@ -1,7 +1,7 @@
 // rozeuklides.c
 
-// Program przedstawia wartość największego wspólego dzielnika dwóch
-// liczb w postaci ich liniowej kombinacji. Wykorzystano
+// Program przedstawia wartość największego wspólego dzielnika
+// dwóch liczb w postaci ich liniowej kombinacji. Wykorzystano
 // rozszerzony algorytm Euklidesa.
 
 #include <stdio.h>
@@ -35,6 +35,7 @@ int main(void)
     x = zapamiętaj_r;
     y = zapamiętaj_s;
   }
-  printf("nwd(%d, %d) = %d * %d + %d * %d = %d\n", m, n, x, m, y, n, a);
+  printf("nwd(%d, %d) = %d * %d + %d * %d = %d\n", 
+         m, n, x, m, y, n, a);
   return 0;
 }

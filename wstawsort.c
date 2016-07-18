@@ -10,7 +10,8 @@ void sort(int dl, int tab[dl])
 {
   for(int i = 1; i < dl; i++)
   {
-    // wstawienie tab[i] do ciągu tab[0], ..., tab[i-1]
+    // wstawienie tab[i] do uporządkowanego 
+    // ciągu tab[0], ..., tab[i-1]
     int j = 0;
     while(j < i && tab[i] > tab[j])
       j++;
