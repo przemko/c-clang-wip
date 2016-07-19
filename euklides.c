@@ -19,7 +19,7 @@ int main(void)
   int b = n;
   while(b > 0)
   {
-    // niezmiennik: nwd(m, n) = nwd(x, y)
+    // niezmiennik: nwd(m, n) = nwd(a, b)
     int reszta = a % b;
     a = b;
     b = reszta;
