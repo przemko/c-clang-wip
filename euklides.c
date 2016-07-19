@@ -15,16 +15,16 @@ int main(void)
   printf("   Podaj drugą dodatnią liczbę całkowitą: ");
   scanf("%d", &n);
   assert(n > 0);
-  int x = m;
-  int y = n;
-  while(x > 0)
+  int a = m;
+  int b = n;
+  while(b > 0)
   {
     // niezmiennik: nwd(m, n) = nwd(x, y)
-    int tmp = x;
-    x = y % x;
-    y = tmp;
+    int reszta = a % b;
+    a = b;
+    b = reszta;
   }
-  printf("nwd(%d, %d) = %d\n", m, n, y);
+  printf("nwd(%d, %d) = %d\n", m, n, a);
   return 0;
 }
 
