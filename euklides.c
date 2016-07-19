@@ -15,8 +15,8 @@ int main(void)
   printf("   Podaj drugą dodatnią liczbę całkowitą: ");
   scanf("%d", &n);
   assert(n > 0);
-  int x = m < n ? m : n;
-  int y = m > n ? m : n;
+  int x = m;
+  int y = n;
   while(x > 0)
   {
     // niezmiennik: nwd(m, n) = nwd(x, y)
