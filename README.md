@@ -1,5 +1,5 @@
 # c-clang-wip
-##`Przykłady programów w języku C
+## Przykłady programów w języku C
 Programy objaśniane na wykładzie Wstęp do Informatyki i Programowania (kierunek Informatyka, Wydział Podstawowych Problemów Techniki, Politechnika Wrocławska).
 
 Kompilacja programów
