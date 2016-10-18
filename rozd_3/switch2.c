@@ -1,7 +1,7 @@
 // switch.c
 //
 // kompilacja: clang switch2.c
-// kompilacja konczy sie bledem kompilatora!
+// kompilacja kończy się błędem kompilatora!
 
 #include <stdio.h>
 
