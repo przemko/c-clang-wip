@@ -18,7 +18,7 @@ int main(void)
   x = malloc(sizeof(int));
   *x = 13;
   y = x;
-  printf("%d\n", *y);
+  printf("%d\n", *y); // wydrukuje 13
   free(x);
   printf("%d\n", *y); // ta instrukcja nie ma sensu
   return 0;
