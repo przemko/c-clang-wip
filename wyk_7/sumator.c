@@ -15,8 +15,15 @@ int main(int argc, char **argv)
   if(argc < 2)
     fp = stdin;
   else
-    fp = fopen(argv[1], "r");
-  
+    {
+      fp = fopen(argv[1], "r");
+      if(fp == NULL)
+	{
+	  printf("Plik %s nie istnieje!\n", argv[1]);
+	  return 1;
+	}
+    }
+
   double suma = 0.0;
   
   while(true)
@@ -28,7 +35,7 @@ int main(int argc, char **argv)
       suma = suma + wartość;
     }
   fclose(fp);
+
   printf("suma = %f\n", suma);
   return 0;
 }
-
