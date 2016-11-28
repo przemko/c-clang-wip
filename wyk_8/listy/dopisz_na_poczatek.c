@@ -9,5 +9,5 @@ Lista dopisz_na_poczatek(Lista wsk, int i)
   nowy = malloc(sizeof(struct Węzeł));
   nowy->wartość = i;
   nowy->następny = wsk;
-	return nowy;
+  return nowy;
 }
