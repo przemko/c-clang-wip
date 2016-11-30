@@ -5,11 +5,11 @@
 
 void usun(Lista *wsk)
 {
-	Lista pomoc;
-	while(*wsk != NULL)
-	{
-		pomoc = (*wsk)->następny;
-		free(*wsk);
-		*wsk = pomoc;
-	}
+  Lista pomoc;
+  while(*wsk != NULL)
+    {
+      pomoc = (*wsk)->następny;
+      free(*wsk);
+      *wsk = pomoc;
+    }
 }
