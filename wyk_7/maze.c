@@ -14,7 +14,7 @@ int main(void)
   srand(time(NULL));
   while(1)
   {
-    printf(rand()%2?"\u2571":"\u2572");
+    printf(rand()&1?"\u2571":"\u2572");
     fflush(stdin);
   }
 }
