@@ -20,3 +20,11 @@ Wynik działania jest następujący: EAX = RDI + RDI.
 
 ### Przykład f2.c
 
+Tym razem funkcja **int f(int)** tyle razy ile odejmuje 1 dodaje 3.
+
+Kompilator znowu optymalizując wyliczył wartość funkcji jedną instrukcją **leal**!
+
+> f: leal (%rdi,%rdi,2), %eax<br>
+&nbsp;&nbsp;&nbsp;retq
+
+Wynik działania: EAX = RDI + 2 * RDI
