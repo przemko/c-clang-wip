@@ -20,7 +20,7 @@ Wynik działania jest następujący: EAX = RDI + RDI.
 
 ### Przykład f2.c
 
-Tym razem funkcja **int f(int)** tyle razy ile odejmuje 1 dodaje 3.
+Tym razem funkcja **int f(int)** tyle razy dodaje 3 ile odejmuje 1.
 
 Kompilator znowu optymalizując wyliczył wartość funkcji jedną instrukcją **leal**!
 
