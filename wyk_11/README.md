@@ -11,11 +11,9 @@ Aby skompilować przykłady użyj polecenia **make**.
 
 Opiszemy kilka podstawowych faktow o jezyku assemblera, ktorych znajomosc jest niezbedna do zrozumienia przykladow.
 
-Rejestry
-========
+#### Rejestry
 
-Adresacja
-=========
+#### Adresacja
 
 > displacement(base register, offset register, scalar multiplier)
 
@@ -23,9 +21,7 @@ Adresacja
 Ponizsza instrukcja umieszcza w rejestrze eax dluga dana (czterobajtowa) spod adresu ebp + 4 * edx - 8: 
 >movl -4(%ebp, %edx, 4), %eax
 
-Arytmetyka
-==========
-
+#### Arytmetyka
 
 
 ### Przykład f1.c
