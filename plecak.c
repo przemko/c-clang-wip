@@ -10,7 +10,7 @@ static const int max_pojemność = 1000000;
 int plecak(int n, int rozmiar[n], int wartość[n],
            int pojemność)
 {
-  int max_wartość[pojemność];
+  int max_wartość[pojemność + 1];
   max_wartość[0] = 0;
   for(int i = 1; i <= pojemność; i++)
   {
