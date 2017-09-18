@@ -20,5 +20,6 @@ int main(void)
 	printf("\npost = ");
 	drukuj_postfiksowo(wsk);
 	printf("\n");
+	usun(&wsk);
 	return 0;
 }

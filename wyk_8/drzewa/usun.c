@@ -1,4 +1,4 @@
-// usun.x
+// usun.c
 
 #include <stdlib.h>
 #include "drzewa.h"
