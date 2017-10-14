@@ -15,47 +15,28 @@ int main(void)
 				      20, 20, 200, 200, 1,
 				      BlackPixel(display, screen),
 				      WhitePixel(display, screen));
-  XSelectInput(display, window, ExposureMask | KeyPressMask);
-  
   XMapWindow(display, window);
   
-  int n = 20000;
-  double x[n];
-  double y[n];
-  x[0] = 0.0;
-  y[0] = 0.0;
-  for(int i = 1; i < n; i++)
-    switch(rand() % 3)
-      {
-      case 0:
-	x[i] = x[i-1] / 2.0;
-	y[i] = (y[i-1] + 200)/ 2.0;
-	break;
-      case 1:
-	x[i] = (x[i-1] + 100.0) / 2.0;
-	y[i] = y[i-1] / 2.0;
-	break;
-      case 2:
-	x[i] = (x[i-1] + 200.0) / 2.0;
-	y[i] = (y[i-1] + 200.0) / 2.0;
-      }
+  double x = 0.0;
+  double y = 0.0;
   
-  XEvent event;
-  while(1)
+  for(;;)
     {
-      XNextEvent(display, &event);
-      
-      switch(event.type)
+      switch(rand() % 3)
 	{
-    	case Expose:
-	  for(int i = 0; i < n; i++)
-	    XDrawPoint(display, window, DefaultGC(display, screen),
-		       (int)x[i], (int)y[i]);
+	case 0:
+	  x = x / 2.0;
+	  y = (y + 200)/ 2.0;
 	  break;
-    	case KeyPress:
-	  XDestroyWindow(display, window);
-	  XCloseDisplay(display);
-	  exit(0);
+	case 1:
+	  x = (x + 100.0) / 2.0;
+	  y = y / 2.0;
+	  break;
+	case 2:
+	  x = (x + 200.0) / 2.0;
+	  y = (y + 200.0) / 2.0;
 	}
+      XDrawPoint(display, window, DefaultGC(display, screen), (int)x, (int)y);
+      XFlush(display);
     }
 }
