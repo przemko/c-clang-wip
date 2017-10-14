@@ -15,7 +15,15 @@ int main(void)
 				      20, 20, 200, 200, 1,
 				      BlackPixel(display, screen),
 				      WhitePixel(display, screen));
+  XSelectInput(display, window, StructureNotifyMask);
   XMapWindow(display, window);
+
+  for(;;) {
+    XEvent e;
+    XNextEvent(display, &e);
+    if (e.type == MapNotify)
+      break;
+  }
   
   double x = 0.0;
   double y = 0.0;
