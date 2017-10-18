@@ -12,7 +12,7 @@ int main(void)
   int screen = DefaultScreen(display);
   Window window = XCreateSimpleWindow(
 				      display, XRootWindow(display, screen),
-				      20, 20, 200, 200, 1,
+				      20, 20, 400, 400, 1,
 				      BlackPixel(display, screen),
 				      WhitePixel(display, screen));
   XSelectInput(display, window, StructureNotifyMask);
@@ -26,7 +26,7 @@ int main(void)
   }
   
   double x = 0.0;
-  double y = 0.0;
+  double y = 400.0;
   
   for(;;)
     {
@@ -34,15 +34,15 @@ int main(void)
 	{
 	case 0:
 	  x = x / 2.0;
-	  y = (y + 200)/ 2.0;
+	  y = (y + 400)/ 2.0;
 	  break;
 	case 1:
-	  x = (x + 100.0) / 2.0;
+	  x = (x + 200.0) / 2.0;
 	  y = y / 2.0;
 	  break;
 	case 2:
-	  x = (x + 200.0) / 2.0;
-	  y = (y + 200.0) / 2.0;
+	  x = (x + 400.0) / 2.0;
+	  y = (y + 400.0) / 2.0;
 	}
       XDrawPoint(display, window, DefaultGC(display, screen), (int)x, (int)y);
       XFlush(display);
