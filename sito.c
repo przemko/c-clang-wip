@@ -29,7 +29,7 @@ int main(void)
   {
     if(sito[liczba])
     {
-      for(int i = liczba+liczba; i <= n; i += liczba)
+      for(int i = liczba*liczba; i <= n; i += liczba)
         sito[i] = false;
     }
   }
