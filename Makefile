@@ -11,6 +11,9 @@ all: $(PROGS)
 analiza:
 	clang --analyze *.c
 
+check:
+	cppcheck --std=c11 *.c
+
 clean:
 	rm -f $(PROGS) *.o *.plist *~
 

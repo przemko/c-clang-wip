@@ -5,26 +5,26 @@
 #include <assert.h>
 
 static const int max_n = 100;
-static const int max_pojemność = 1000000;
+static const int max_pojemnosc = 1000000;
 
-int plecak(int n, int rozmiar[n], int wartość[n],
-           int pojemność)
+int plecak(int n, int rozmiar[n], int wartosc[n],
+           int pojemnosc)
 {
-  int max_wartość[pojemność + 1];
-  max_wartość[0] = 0;
-  for(int i = 1; i <= pojemność; i++)
+  int max_wartosc[pojemnosc + 1];
+  max_wartosc[0] = 0;
+  for(int i = 1; i <= pojemnosc; i++)
   {
     int max = 0;
     for(int t = 0; t < n; t++)
       if(rozmiar[t] <= i)
       {
-        int łącznie = max_wartość[i - rozmiar[t]] + wartość[t];
-        if(łącznie > max)
-          max = łącznie;
+        int lacznie = max_wartosc[i - rozmiar[t]] + wartosc[t];
+        if(lacznie > max)
+          max = lacznie;
       }
-    max_wartość[i] = max;
+    max_wartosc[i] = max;
   }
-  return max_wartość[pojemność];
+  return max_wartosc[pojemnosc];
 }
 
 int main(void)
@@ -34,22 +34,22 @@ int main(void)
   scanf("%d", &n);
   assert(n > 0);
   assert(n <= max_n);
-  int pojemność;
-  printf("Pojemność plecaka (max = %d): ", max_pojemność);
-  scanf("%d", &pojemność);
-  assert(pojemność > 0);
-  assert(pojemność <= max_pojemność);
+  int pojemnosc;
+  printf("Pojemność plecaka (max = %d): ", max_pojemnosc);
+  scanf("%d", &pojemnosc);
+  assert(pojemnosc > 0);
+  assert(pojemnosc <= max_pojemnosc);
   int rozmiar[n];
-  int wartość[n];
+  int wartosc[n];
   for(int i = 0; i < n; i++)
   {
     printf("  rozmiar przedmiotu [%d]: ", i);
     scanf("%d", &rozmiar[i]);
     printf("  wartość przedmiotu [%d]: ", i);
-    scanf("%d", &wartość[i]);
+    scanf("%d", &wartosc[i]);
   } 
   printf("Maksymalna wartość zabranych przedmiotów = %d\n", 
-         plecak(n, rozmiar, wartość, pojemność)); 
+         plecak(n, rozmiar, wartosc, pojemnosc)); 
   return 0;
 }
 

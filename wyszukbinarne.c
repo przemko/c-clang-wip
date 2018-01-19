@@ -12,17 +12,17 @@ bool szukaj(int n, int tablica[n], int wart, int *indeks)
   int prawy = n - 1;
   while(lewy <= prawy)
   {
-    int środek = lewy + (prawy - lewy) / 2;
-    if(wart == tablica[środek])
+    int srodek = lewy + (prawy - lewy) / 2;
+    if(wart == tablica[srodek])
     {
-      *indeks = środek;
+      *indeks = srodek;
       return true;
     }
     else
-      if(wart < tablica[środek])
-        prawy = środek - 1;
+      if(wart < tablica[srodek])
+        prawy = srodek - 1;
       else
-        lewy = środek + 1;
+        lewy = srodek + 1;
   }
   return false;
 }

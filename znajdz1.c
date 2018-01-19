@@ -32,18 +32,18 @@ int main(void)
   srand(time(NULL));
   for(int i = 0; i < n; i++)
   {
-    bool następny;
+    bool nastepny;
     do
     {
       t[i] = rand() % (3 * n / 2);
-      następny = true;
+      nastepny = true;
       for(int j = 0; j < i; j++)
         if(t[i] == t[j])
         {
-          następny = false;
+          nastepny = false;
           break;
         }
-    } while(! następny);
+    } while(! nastepny);
   }
   printf("          Tablica:");
   for(int i = 0; i < n; i++)

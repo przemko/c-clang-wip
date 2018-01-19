@@ -32,13 +32,13 @@ int main(void)
     assert(reszta == a - iloraz * b);
     a = b;
     b = reszta;
-    int zapamiętaj_r = r;
-    int zapamiętaj_s = s;
+    int zapamietaj_r = r;
+    int zapamietaj_s = s;
     r = x - iloraz * r;
     s = y - iloraz * s;
-    assert (m * r + n * s == m * x + n * y - iloraz * (m * zapamiętaj_r + n * zapamiętaj_s));
-    x = zapamiętaj_r;
-    y = zapamiętaj_s;
+    assert (m * r + n * s == m * x + n * y - iloraz * (m * zapamietaj_r + n * zapamietaj_s));
+    x = zapamietaj_r;
+    y = zapamietaj_s;
   }
   printf("nwd(%d, %d) = %d * %d + %d * %d = %d\n", 
          m, n, x, m, y, n, a);

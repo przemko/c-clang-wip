@@ -5,15 +5,15 @@
 #include <stdio.h>
 #include <assert.h>
 
-void hanoi(int ile, int skąd, int dokąd, int *licznik)
+void hanoi(int ile, int skad, int dokad, int *licznik)
 {
   if(ile  > 0)
   {
-    int pomoc = 6 - (skąd+dokąd);
-    hanoi(ile-1, skąd, pomoc, licznik);
+    int pomoc = 6 - (skad+dokad);
+    hanoi(ile-1, skad, pomoc, licznik);
     (*licznik)++;
-    printf("%d: %d ==> %d\n", *licznik, skąd, dokąd);
-    hanoi(ile-1, pomoc, dokąd, licznik);
+    printf("%d: %d ==> %d\n", *licznik, skad, dokad);
+    hanoi(ile-1, pomoc, dokad, licznik);
   }
 }
 
