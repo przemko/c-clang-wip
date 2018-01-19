@@ -14,6 +14,8 @@ Analiza statyczna kodu
 
 $ make analiza
 
+$ make check
+
 Sprzątanie niepotrzebnych plików
 --------------------------------
 
