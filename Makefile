@@ -9,9 +9,19 @@ sumy wyszukliniowe wyszukbinarne znajdz1 znajdz2
 all: $(PROGS)
 
 analiza:
+	@echo
+	@echo "*****************************************"
+	@echo "**  Analiza statyczna programem clang  **"
+	@echo "*****************************************"
+	@echo
 	clang --analyze *.c
 
 check:
+	@echo
+	@echo "********************************************"
+	@echo "**  Analiza statyczna programem cppcheck  **"
+	@echo "********************************************"
+	@echo
 	cppcheck --std=c11 *.c
 
 clean:
