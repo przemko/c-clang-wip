@@ -22,7 +22,7 @@ check:
 	@echo "**  Analiza statyczna programem cppcheck  **"
 	@echo "********************************************"
 	@echo
-	cppcheck --std=c11 *.c
+	cppcheck --enable=all --std=c11 *.c
 
 clean:
 	rm -f $(PROGS) *.o *.plist *~
