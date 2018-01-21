@@ -82,7 +82,7 @@ int main(void)
   }
   printf("          Tablica:");
   for(int i = 0; i < n; i++)
-    printf(" %d", t[i]);
+    printf(" %u", t[i]);
   printf("\n");
   printf("Najmniejszy spoza: %u\n", znajdz_min_spoza(n, t));
   return 0;
