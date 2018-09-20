@@ -8,8 +8,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-int podziel(int dl, unsigned int tab[dl], int poczatek, 
-            int koniec, unsigned int prog)
+int podziel(int dl, int tab[dl], int poczatek, 
+            int koniec, int prog)
 {
   int i = poczatek;
   int j = koniec;
@@ -31,18 +31,18 @@ int podziel(int dl, unsigned int tab[dl], int poczatek,
   return i;
 }
 
-unsigned int znajdz_min_spoza(int dl, unsigned int tab[dl])
+int znajdz_min_spoza(int dl, int tab[dl])
 {
   int poczatek = 0;
   int koniec = dl - 1;
-  unsigned int akumulator = 0;
+  int akumulator = 0;
   int n = dl;
-  unsigned int pomoc[dl];
+  int pomoc[dl];
   for(int i = 0; i < dl; i++)
     pomoc[i] = tab[i];
   while(n > 0)
   {
-    unsigned int prog = akumulator + 1 + n / 2;
+    int prog = akumulator + 1 + n / 2;
     int granica = podziel(dl, pomoc, poczatek, koniec, prog);
     int m = granica - poczatek;
     if(m == prog - akumulator)
@@ -63,7 +63,7 @@ unsigned int znajdz_min_spoza(int dl, unsigned int tab[dl])
 int main(void)
 {
   int n = 20;
-  unsigned int t[n];
+  int t[n];
   srand(time(NULL));
   for(int i = 0; i < n; i++)
   {

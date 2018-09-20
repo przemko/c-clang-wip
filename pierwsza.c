@@ -9,12 +9,12 @@
 
 int main(void)
 {
-  unsigned int n;
+  int n;
   printf("Podaj liczbę do zbadania (większą od 1): ");
   scanf("%u", &n);
   assert(n > 1);
-  unsigned int limit = sqrt(n);
-  unsigned int i = 2;
+  int limit = sqrt(n);
+  int i = 2;
   while(i <= limit)
   {
     if(n % i == 0)

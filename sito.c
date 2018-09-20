@@ -9,11 +9,11 @@
 #include <stdbool.h>
 #include <assert.h>
 
-static const unsigned int max_n = 1000000;
+static const int max_n = 1000000;
 
 int main(void)
 {
-  unsigned int n;
+  int n;
   printf("Podaj zakres (max %u): ", max_n);
   scanf("%u", &n);
   assert(n <= max_n);
@@ -22,7 +22,7 @@ int main(void)
     sito[i] = true;
   sito[0] = false;
   sito[1] = false;
-  unsigned int limit = sqrt (n);
+  int limit = sqrt (n);
   assert(limit <= n); // na potrzeby analizy statycznej
 
   for(int liczba = 0; liczba <= limit; liczba++)

@@ -8,9 +8,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-unsigned int znajdz_min_spoza(int n, unsigned int tab[n])
+int znajdz_min_spoza(int n, int tab[n])
 {
-  unsigned int min = 0;
+  int min = 0;
   bool zrobione = false;  
   while(!zrobione)
   {
@@ -28,7 +28,7 @@ unsigned int znajdz_min_spoza(int n, unsigned int tab[n])
 int main(void)
 {
   int n = 20;
-  unsigned int t[n];
+  int t[n];
   srand(time(NULL));
   for(int i = 0; i < n; i++)
   {
