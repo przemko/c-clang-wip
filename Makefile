@@ -1,5 +1,5 @@
 CC=clang
-CFLAGS=-Wall --pedantic -std=c11
+CFLAGS=-Wextra --pedantic -std=c11
 LDFLAGS=-lm
 
 PROGS=doublemacheps euklides floatmacheps hanoi hetmany \
