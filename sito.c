@@ -14,8 +14,8 @@ static const int max_n = 1000000;
 int main(void)
 {
   int n;
-  printf("Podaj zakres (max %u): ", max_n);
-  scanf("%u", &n);
+  printf("Podaj zakres (max %d): ", max_n);
+  scanf("%d", &n);
   assert(n <= max_n);
   bool sito[n+1];
   for(int i = 0; i <= n; i++)
@@ -39,7 +39,7 @@ int main(void)
     if(sito[liczba])
       licznik++;
 
-  printf("Znaleziono %d liczb pierwszych w [0 .. %u].\n",
+  printf("Znaleziono %d liczb pierwszych w [0 .. %d].\n",
          licznik, n);
   return 0;
 }

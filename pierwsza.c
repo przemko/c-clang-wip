@@ -11,7 +11,7 @@ int main(void)
 {
   int n;
   printf("Podaj liczbę do zbadania (większą od 1): ");
-  scanf("%u", &n);
+  scanf("%d", &n);
   assert(n > 1);
   int limit = sqrt(n);
   int i = 2;
@@ -22,9 +22,9 @@ int main(void)
     i++; 
   }
   if(i > limit)
-    printf("%u jest liczbą pierwszą.\n", n);
+    printf("%d jest liczbą pierwszą.\n", n);
   else
-    printf("%u nie jest liczbą pierwszą (np. %u|%u).\n",
+    printf("%d nie jest liczbą pierwszą (np. %d|%d).\n",
            n, i, n);
   return 0;
 }
