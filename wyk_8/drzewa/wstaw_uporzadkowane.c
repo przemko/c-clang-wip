@@ -15,7 +15,6 @@ void wstaw_uporzadkowane(Drzewo *wsk, int i)
 	else 
 		if(i < (*wsk)->wartość) 
 			wstaw_uporzadkowane(&((*wsk)->lewe), i);
-		else
-			if(i > (*wsk)->wartość)
-				wstaw_uporzadkowane(&((*wsk)->prawe), i);
+		else if(i > (*wsk)->wartość)
+			wstaw_uporzadkowane(&((*wsk)->prawe), i);
 }
