@@ -9,7 +9,7 @@
 #include <stdbool.h>
 #include <assert.h>
 
-static const int max_n = 1000000;
+int const max_n = 1000000;
 
 int main(void)
 {

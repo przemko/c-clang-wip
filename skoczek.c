@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-static const int max_rozmiar = 8;
+int const max_rozmiar = 8;
 int dx[8] = {+1, +2, +2, +1, -1, -2, -2, -1};
 int dy[8] = {-2, -1, +1, +2, +2, +1, -1, -2};
 
