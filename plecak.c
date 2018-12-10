@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <assert.h>
 
-static const int max_n = 100;
-static const int max_pojemnosc = 1000000;
+int const max_n = 100;
+int const max_pojemnosc = 1000000;
 
 int plecak(int n, int rozmiar[n], int wartosc[n],
            int pojemnosc)
