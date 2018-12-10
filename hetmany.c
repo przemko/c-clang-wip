@@ -8,7 +8,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-static const int max_rozmiar = 20;
+int const max_rozmiar = 20;
 
 bool hetmany(int rozmiar, int permutacja[rozmiar], int kolumna)
 {
