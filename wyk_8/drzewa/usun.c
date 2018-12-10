@@ -5,11 +5,11 @@
 
 void usun(Drzewo *wsk)
 {
-	if(*wsk != NULL)
-	{
-		usun(&((*wsk)->lewe));
-		usun(&((*wsk)->prawe));
-		free(*wsk);
-		*wsk = NULL;
-	}
+  if(*wsk != NULL)
+    {
+      usun(&((*wsk)->lewe));
+      usun(&((*wsk)->prawe));
+      free(*wsk);
+      *wsk = NULL;
+    }
 }
