@@ -15,6 +15,6 @@ int main(void)
   while(1)
   {
     printf(rand()&1?"\u2571":"\u2572");
-    fflush(stdin);
+    fflush(stdout);
   }
 }
