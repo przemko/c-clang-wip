@@ -24,7 +24,7 @@ int main(void)
     if (e.type == MapNotify)
       break;
   }
-  
+
   double a = 0.96;
   double b = 1.0 - a;
   double x1 = 0.0;
