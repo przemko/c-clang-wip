@@ -11,14 +11,14 @@ int power(int x, unsigned int n)
     {
       assert (y * pow(p, i) == pow(x, n));
       if(i % 2 == 0)
-	{
-	  p = p * p;
-	  i = i / 2;
-	}
-    else
+	    {
+	      p = p * p;
+	      i = i / 2;
+	    }
+      else
       {
-	y = y * p;
-	i = i - 1;
+	      y = y * p;
+	      i = i - 1;
       }
     }
   return y;
@@ -26,6 +26,6 @@ int power(int x, unsigned int n)
 
 int main(void)
 {
-  printf("%d\n", power(11, 5));
+  printf("%d\n", power(2, 16));
   return 0;
 }
