@@ -4,7 +4,7 @@ LDFLAGS=-lm
 
 PROGS=doublemacheps euklides floatmacheps hanoi hetmany \
 pierwsza plecak rozeuklides sito skoczek scalsort wstawsort \
-sumy wyszukliniowe wyszukbinarne znajdz1 znajdz2
+sumy wyszukliniowe wyszukbinarne znajdz1 znajdz2 power
 
 all: $(PROGS)
 
