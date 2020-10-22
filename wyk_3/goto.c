@@ -10,13 +10,13 @@ int main(void)
   printf("\n");
   int i = 1;
 
-Pętla:
+Początek:
 
   if(i > n)
     goto Koniec;
   printf("%d\n", i);
   i = i + 1;
-  goto Pętla;
+  goto Początek;
 
 Koniec:
 
