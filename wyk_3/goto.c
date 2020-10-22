@@ -1,3 +1,5 @@
+// goto.c
+
 #include<stdio.h>
 
 int main(void)
@@ -5,7 +7,7 @@ int main(void)
   int n;
   printf("Podaj ile liczb wydrukować: ");
   scanf("%d", &n);
-  printf("\n\n");
+  printf("\n");
   int i = 1;
 
 Pętla:
