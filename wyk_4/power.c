@@ -18,6 +18,7 @@ int main(void)
   int i = n;
   while(i > 0)
   {
+    // niezmiennik: y * p ** i = x ** n
     assert (y * pow(p, i) == pow(x, n));
     if(i % 2 == 0)
     {
