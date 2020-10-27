@@ -31,7 +31,7 @@ int main(void)
     }
   }
 
-  printf("%d ^ %d = %d\n", x, n, y);
+  printf("%d ** %d = %d\n", x, n, y);
   return 0;
 }
 
