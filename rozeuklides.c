@@ -16,6 +16,7 @@ int main(void)
   printf("   Podaj drugą liczbę dodatnią: ");
   scanf("%d", &n);
   assert(n > 0);
+
   int a = m;
   int b = n;
   int x = 1;
@@ -24,23 +25,22 @@ int main(void)
   int s = 1;
   while (b > 0)
   {
-    // niezmiennik: nwd(m, n) = nwd (a, b)
+    // niezmiennik: NWD(m, n) = NWD(a, b)
     // niezmiennik: a = m * x + n * y
     // niezmiennik: b = m * r + n * s
     int reszta = a % b;
     int iloraz = a / b;
-    assert(reszta == a - iloraz * b);
     a = b;
     b = reszta;
-    int zapamietaj_r = r;
-    int zapamietaj_s = s;
+    int rr = r;
+    int ss = s;
     r = x - iloraz * r;
     s = y - iloraz * s;
-    assert (m * r + n * s == m * x + n * y - iloraz * (m * zapamietaj_r + n * zapamietaj_s));
-    x = zapamietaj_r;
-    y = zapamietaj_s;
+    x = rr;
+    y = ss;
   }
-  printf("nwd(%d, %d) = %d * %d + %d * %d = %d\n", 
-         m, n, x, m, y, n, a);
+  int z = a;
+  
+  printf("%d * %d + %d * %d = %d\n", m, x, n, y, z);
   return 0;
 }
