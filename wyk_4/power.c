@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include <assert.h>
 
 int main(void)
@@ -19,7 +18,6 @@ int main(void)
   while(i > 0)
   {
     // niezmiennik: y * p ** i = x ** n
-    assert (y * pow(p, i) == pow(x, n));
     if(i % 2 == 0)
     {
       p = p * p;
