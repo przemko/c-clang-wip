@@ -25,13 +25,13 @@ union Wariant
 
 struct Osoba
 {
-  bool czy_mężczyzna;
+  bool jest_mężczyzną;
   union Wariant w;
 };
 
 void drukuj (struct Osoba o)
 {
-  if(o.czy_mężczyzna)
+  if(o.jest_mężczyzną)
     printf("%s %s\n", o.w.m.imię, o.w.m.nazwisko);
   else
     printf("%s %s z domu %s\n", o.w.k.imię, o.w.k.nazwisko,
@@ -41,7 +41,7 @@ void drukuj (struct Osoba o)
 int main(void)
 {
   struct Osoba pracownik;
-  pracownik.czy_mężczyzna = false;
+  pracownik.jest_mężczyzną = false;
   strcpy(pracownik.w.k.imię,                "Anna");
   strcpy(pracownik.w.k.nazwisko,            "Nowak");
   strcpy(pracownik.w.k.nazwisko_panieńskie, "Kowalska");
