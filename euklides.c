@@ -8,6 +8,8 @@
 
 int nwd(int a, int b)
 {
+  assert(a > 0);
+  assert(b > 0);
   while(b > 0)
   {
     // niezmiennik: nwd(m, n) = nwd(a, b)
@@ -23,10 +25,8 @@ int main(void)
   int m, n;
   printf("Podaj pierwszą dodatnią liczbę całkowitą: ");
   scanf("%d", &m);
-  assert(m > 0);
   printf("   Podaj drugą dodatnią liczbę całkowitą: ");
   scanf("%d", &n);
-  assert(n > 0);
   printf("nwd(%d, %d) = %d\n", m, n, nwd(m, n));
   return 0;
 }
