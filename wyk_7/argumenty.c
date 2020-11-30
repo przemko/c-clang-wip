@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
   printf("Liczba argumentów (argc) = %d\n", argc);
   printf("Kolejne argumenty o indeksach od 0 do %d:\n", argc - 1);
