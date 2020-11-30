@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
   FILE *fp;
   if(argc < 2)
