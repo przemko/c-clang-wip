@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "listy.h"
 
-void dopisz_na_koniec(Lista *wsk, int i)
+void dopisz_na_koniec(Lista* wsk, int i)
 {
   Lista nowy, pomoc;
   nowy = malloc(sizeof(struct Węzeł));

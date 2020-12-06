@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "listy.h"
 
-void usun(Lista *wsk)
+void usun(Lista* wsk)
 {
   Lista pomoc;
   while(*wsk != NULL)
