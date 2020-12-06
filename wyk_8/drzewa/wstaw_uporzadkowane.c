@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "drzewa.h"
 
-void wstaw_uporzadkowane(Drzewo *wsk, int i)
+void wstaw_uporzadkowane(Drzewo* wsk, int i)
 {
   if(*wsk == NULL)
     {
