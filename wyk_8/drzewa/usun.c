@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "drzewa.h"
 
-void usun(Drzewo *wsk)
+void usun(Drzewo* wsk)
 {
   if(*wsk != NULL)
     {
