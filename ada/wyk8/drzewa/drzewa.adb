@@ -3,8 +3,6 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 package body Drzewa is 
 
-    procedure Free is new Ada.Unchecked_Deallocation (Wezel, Drzewo);
-
     procedure Wstaw_Uporzadkowane (Wsk : in out Drzewo; I : Integer) is
     begin
         if Wsk = null then
@@ -18,6 +16,9 @@ package body Drzewa is
     end Wstaw_Uporzadkowane;
 
     procedure Usun (Wsk : in out Drzewo) is
+
+        procedure Free is new Ada.Unchecked_Deallocation (Wezel, Drzewo);
+
     begin
         if Wsk /= null then
             Usun (Wsk.Lewe);

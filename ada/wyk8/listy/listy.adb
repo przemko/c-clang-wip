@@ -3,8 +3,6 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 package body Listy is
 
-    procedure Free is new Ada.Unchecked_Deallocation (Wezel, Lista);
-
     procedure Dopisz_Na_Poczatek (Wsk : in out Lista; I : Integer) is
         Nowy : Lista;
     begin
@@ -40,6 +38,9 @@ package body Listy is
     end Drukuj;
 
     procedure Usun (Wsk : in out Lista) is
+
+        procedure Free is new Ada.Unchecked_Deallocation (Wezel, Lista);
+
         Pomoc : Lista;
     begin
         while Wsk /= null loop
